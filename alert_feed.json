@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-03-24T10:30:59.782776Z",
+  "total_alerts": 8,
+  "alerts": [
+    {
+      "alert_id": "student_001_2025-01-16_SUDDEN_DROP",
+      "anomaly_type": "SUDDEN_DROP",
+      "severity": "HIGH",
+      "date": "2025-01-16",
+      "person_id": "student_001",
+      "description": "Wellbeing dropped 30.3 pts below personal baseline (baseline=72.3, today=42).",
+      "value": 42.0,
+      "baseline_value": 72.33,
+      "delta": -30.33,
+      "generated_at": "2026-03-24T10:30:59.782369Z"
+    },
+    {
+      "alert_id": "student_001_2025-01-16_SOCIAL_WITHDRAWAL",
+      "anomaly_type": "SOCIAL_WITHDRAWAL",
+      "severity": "MEDIUM",
+      "date": "2025-01-16",
+      "person_id": "student_001",
+      "description": "Social engagement dropped 30.3 pts vs baseline (baseline=68.3, today=38) with gaze direction='downward'.",
+      "value": 38.0,
+      "baseline_value": 68.33,
+      "delta": -30.33,
+      "generated_at": "2026-03-24T10:30:59.782417Z"
+    },
+    {
+      "alert_id": "student_001_2025-01-17_SUDDEN_DROP",
+      "anomaly_type": "SUDDEN_DROP",
+      "severity": "HIGH",
+      "date": "2025-01-17",
+      "person_id": "student_001",
+      "description": "Wellbeing dropped 34.3 pts below personal baseline (baseline=72.3, today=38).",
+      "value": 38.0,
+      "baseline_value": 72.33,
+      "delta": -34.33,
+      "generated_at": "2026-03-24T10:30:59.782445Z"
+    },
+    {
+      "alert_id": "student_001_2025-01-17_SOCIAL_WITHDRAWAL",
+      "anomaly_type": "SOCIAL_WITHDRAWAL",
+      "severity": "MEDIUM",
+      "date": "2025-01-17",
+      "person_id": "student_001",
+      "description": "Social engagement dropped 40.3 pts vs baseline (baseline=68.3, today=28) with gaze direction='downward'.",
+      "value": 28.0,
+      "baseline_value": 68.33,
+      "delta": -40.33,
+      "generated_at": "2026-03-24T10:30:59.782457Z"
+    },
+    {
+      "alert_id": "student_001_2025-01-18_SUDDEN_DROP",
+      "anomaly_type": "SUDDEN_DROP",
+      "severity": "HIGH",
+      "date": "2025-01-18",
+      "person_id": "student_001",
+      "description": "Wellbeing dropped 32.3 pts below personal baseline (baseline=72.3, today=40).",
+      "value": 40.0,
+      "baseline_value": 72.33,
+      "delta": -32.33,
+      "generated_at": "2026-03-24T10:30:59.782477Z"
+    },
+    {
+      "alert_id": "student_001_2025-01-18_SUSTAINED_LOW",
+      "anomaly_type": "SUSTAINED_LOW",
+      "severity": "HIGH",
+      "date": "2025-01-18",
+      "person_id": "student_001",
+      "description": "Wellbeing below 45 for 3 consecutive days (avg=40.0).",
+      "value": 40.0,
+      "baseline_value": 72.33,
+      "delta": -32.33,
+      "generated_at": "2026-03-24T10:30:59.782523Z"
+    },
+    {
+      "alert_id": "student_001_2025-01-18_SOCIAL_WITHDRAWAL",
+      "anomaly_type": "SOCIAL_WITHDRAWAL",
+      "severity": "MEDIUM",
+      "date": "2025-01-18",
+      "person_id": "student_001",
+      "description": "Social engagement dropped 38.3 pts vs baseline (baseline=68.3, today=30) with gaze direction='downward'.",
+      "value": 30.0,
+      "baseline_value": 68.33,
+      "delta": -38.33,
+      "generated_at": "2026-03-24T10:30:59.782530Z"
+    },
+    {
+      "alert_id": "student_001_2025-01-20_ABSENCE_FLAG",
+      "anomaly_type": "ABSENCE_FLAG",
+      "severity": "CRITICAL",
+      "date": "2025-01-20",
+      "person_id": "student_001",
+      "description": "Person not detected for 2 consecutive days \u2014 welfare check needed.",
+      "value": 0,
+      "baseline_value": null,
+      "delta": null,
+      "generated_at": "2026-03-24T10:30:59.782546Z"
+    }
+  ]
+}

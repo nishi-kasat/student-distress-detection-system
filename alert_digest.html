@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>FreeMinds – Alert Digest</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+    padding: 32px 24px;
+    line-height: 1.5;
+  }
+  h1 { font-size: 24px; font-weight: 800; }
+  h2 { font-size: 16px; font-weight: 700; color: #475569; margin-bottom: 14px; }
+  table { width: 100%; border-collapse: collapse; }
+  th {
+    background: #1e293b; color: #f1f5f9; text-align: left;
+    padding: 10px 12px; font-size: 12px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: .5px;
+  }
+  td { padding: 10px 12px; border-bottom: 1px solid #e2e8f0; font-size: 13px; vertical-align: top; }
+  tr:hover td { filter: brightness(0.97); }
+  .card-row { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; }
+  .section { background: #fff; border: 1px solid #e2e8f0; border-radius: 14px;
+    padding: 24px; margin-bottom: 28px; }
+  .header-bar {
+    display: flex; align-items: center; justify-content: space-between;
+    background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%);
+    color: #fff; border-radius: 14px; padding: 24px 28px; margin-bottom: 28px;
+  }
+  .logo { font-size: 22px; font-weight: 800; letter-spacing: -0.5px; }
+  .logo span { color: #38bdf8; }
+  .meta { font-size: 13px; color: #94a3b8; margin-top: 4px; }
+  .baseline-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px; }
+  .baseline-item { background: #f1f5f9; border-radius: 8px; padding: 12px 16px; }
+  .baseline-label { font-size: 11px; color: #64748b; font-weight: 600;
+    text-transform: uppercase; letter-spacing: .5px; }
+  .baseline-val { font-size: 20px; font-weight: 700; color: #1e293b; }
+  @media (max-width: 640px) {
+    .header-bar { flex-direction: column; align-items: flex-start; gap: 8px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header-bar">
+  <div>
+    <div class="logo">FreeMinds</div>
+    <div class="meta">Behavioral Anomaly &amp; Early Distress Detection — Counsellor Report</div>
+  </div>
+  <div style="text-align:right">
+    <div style="font-size:13px;color:#94a3b8">Generated</div>
+    <div style="font-weight:700">2026-03-24 10:30 UTC</div>
+  </div>
+</div>
+
+<!-- Student summary -->
+<div class="section">
+  <h2>Student Overview</h2>
+  <div style="display:flex;flex-wrap:wrap;gap:24px;margin-bottom:18px">
+    <div><div style="font-size:11px;color:#64748b;font-weight:600;text-transform:uppercase">Person ID</div>
+         <div style="font-weight:700;font-size:15px">student_001</div></div>
+    <div><div style="font-size:11px;color:#64748b;font-weight:600;text-transform:uppercase">Analysis Period</div>
+         <div style="font-weight:700;font-size:15px">2025-01-13 → 2025-01-20</div></div>
+    <div><div style="font-size:11px;color:#64748b;font-weight:600;text-transform:uppercase">Days Analysed</div>
+         <div style="font-weight:700;font-size:15px">8</div></div>
+    <div><div style="font-size:11px;color:#64748b;font-weight:600;text-transform:uppercase">Absent Days</div>
+         <div style="font-weight:700;font-size:15px;color:#dc2626">2</div></div>
+    <div><div style="font-size:11px;color:#64748b;font-weight:600;text-transform:uppercase">Total Alerts</div>
+         <div style="font-weight:700;font-size:15px;color:#dc2626">8</div></div>
+  </div>
+  <div><span style="background:#dc2626;color:#fff;padding:4px 14px;border-radius:20px;font-size:13px;font-weight:700;margin-right:6px">1 CRITICAL</span><span style="background:#f59e0b;color:#fff;padding:4px 14px;border-radius:20px;font-size:13px;font-weight:700;margin-right:6px">4 HIGH</span><span style="background:#3b82f6;color:#fff;padding:4px 14px;border-radius:20px;font-size:13px;font-weight:700;margin-right:6px">3 MEDIUM</span><span style="background:#22c55e;color:#fff;padding:4px 14px;border-radius:20px;font-size:13px;font-weight:700;margin-right:6px">0 LOW</span></div>
+</div>
+
+<!-- Metric sparklines -->
+<div class="card-row">
+  
+        <div style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;
+          padding:16px 20px;min-width:200px;flex:1">
+          <div style="font-size:12px;color:#64748b;font-weight:600;text-transform:uppercase;
+            letter-spacing:.5px">Wellbeing Score</div>
+          <div style="margin:8px 0"><svg width="160" height="36" style="vertical-align:middle" xmlns="http://www.w3.org/2000/svg"><polyline points="2,4 33,2 64,6 95,30 126,34 158,32" fill="none" stroke="#94a3b8" stroke-width="1.5"/><circle cx="158" cy="32" r="3" fill="#ef4444"/></svg></div>
+          <div style="font-size:22px;font-weight:700;color:#1e293b">—</div>
+          <div style="font-size:12px;color:#64748b">baseline=72.3</div>
+        </div>
+  
+        <div style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;
+          padding:16px 20px;min-width:200px;flex:1">
+          <div style="font-size:12px;color:#64748b;font-weight:600;text-transform:uppercase;
+            letter-spacing:.5px">Social Engagement</div>
+          <div style="margin:8px 0"><svg width="160" height="36" style="vertical-align:middle" xmlns="http://www.w3.org/2000/svg"><polyline points="2,4 33,2 64,7 95,26 126,34 158,32" fill="none" stroke="#94a3b8" stroke-width="1.5"/><circle cx="158" cy="32" r="3" fill="#ef4444"/></svg></div>
+          <div style="font-size:22px;font-weight:700;color:#1e293b">—</div>
+          <div style="font-size:12px;color:#64748b">baseline=68.3</div>
+        </div>
+  
+        <div style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;
+          padding:16px 20px;min-width:200px;flex:1">
+          <div style="font-size:12px;color:#64748b;font-weight:600;text-transform:uppercase;
+            letter-spacing:.5px">Energy Level</div>
+          <div style="margin:8px 0"><svg width="160" height="36" style="vertical-align:middle" xmlns="http://www.w3.org/2000/svg"><polyline points="2,4 33,2 64,6 95,27 126,32 158,34" fill="none" stroke="#94a3b8" stroke-width="1.5"/><circle cx="158" cy="34" r="3" fill="#ef4444"/></svg></div>
+          <div style="font-size:22px;font-weight:700;color:#1e293b">—</div>
+          <div style="font-size:12px;color:#64748b">baseline=60.3</div>
+        </div>
+</div>
+
+<!-- Baseline -->
+<div class="section">
+  <h2>Personal Baseline (first 3 days)</h2>
+  <div class="baseline-grid">
+    <div class="baseline-item">
+      <div class="baseline-label">Wellbeing Mean</div>
+      <div class="baseline-val">72.3</div>
+    </div>
+    <div class="baseline-item">
+      <div class="baseline-label">Wellbeing Std Dev</div>
+      <div class="baseline-val">2.1</div>
+    </div>
+    <div class="baseline-item">
+      <div class="baseline-label">Social Mean</div>
+      <div class="baseline-val">68.3</div>
+    </div>
+    <div class="baseline-item">
+      <div class="baseline-label">Energy Mean</div>
+      <div class="baseline-val">60.3</div>
+    </div>
+    <div class="baseline-item">
+      <div class="baseline-label">Threshold Multiplier</div>
+      <div class="baseline-val">1.0×</div>
+    </div>
+  </div>
+</div>
+
+<!-- Alert table -->
+<div class="section">
+  <h2>Detected Anomalies</h2>
+  <div style="overflow-x:auto">
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Severity</th>
+          <th>Anomaly Type</th>
+          <th>Description</th>
+          <th>Value</th>
+          <th>Δ Baseline</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+            <tr style="background:#fef3c7">
+              <td style="color:#78350f;font-weight:600">2025-01-16</td>
+              <td>
+                <span style="background:#f59e0b;color:#fff;padding:2px 8px;
+                  border-radius:12px;font-size:11px;font-weight:700">HIGH</span>
+              </td>
+              <td style="font-weight:600;color:#78350f">SUDDEN_DROP</td>
+              <td style="color:#334155;font-size:13px">Wellbeing dropped 30.3 pts below personal baseline (baseline=72.3, today=42).</td>
+              <td style="text-align:center">42.0</td>
+              <td style="text-align:center;font-weight:700;color:#ef4444">-30.3</td>
+            </tr>
+            <tr style="background:#dbeafe">
+              <td style="color:#1e3a5f;font-weight:600">2025-01-16</td>
+              <td>
+                <span style="background:#3b82f6;color:#fff;padding:2px 8px;
+                  border-radius:12px;font-size:11px;font-weight:700">MEDIUM</span>
+              </td>
+              <td style="font-weight:600;color:#1e3a5f">SOCIAL_WITHDRAWAL</td>
+              <td style="color:#334155;font-size:13px">Social engagement dropped 30.3 pts vs baseline (baseline=68.3, today=38) with gaze direction='downward'.</td>
+              <td style="text-align:center">38.0</td>
+              <td style="text-align:center;font-weight:700;color:#ef4444">-30.3</td>
+            </tr>
+            <tr style="background:#fef3c7">
+              <td style="color:#78350f;font-weight:600">2025-01-17</td>
+              <td>
+                <span style="background:#f59e0b;color:#fff;padding:2px 8px;
+                  border-radius:12px;font-size:11px;font-weight:700">HIGH</span>
+              </td>
+              <td style="font-weight:600;color:#78350f">SUDDEN_DROP</td>
+              <td style="color:#334155;font-size:13px">Wellbeing dropped 34.3 pts below personal baseline (baseline=72.3, today=38).</td>
+              <td style="text-align:center">38.0</td>
+              <td style="text-align:center;font-weight:700;color:#ef4444">-34.3</td>
+            </tr>
+            <tr style="background:#dbeafe">
+              <td style="color:#1e3a5f;font-weight:600">2025-01-17</td>
+              <td>
+                <span style="background:#3b82f6;color:#fff;padding:2px 8px;
+                  border-radius:12px;font-size:11px;font-weight:700">MEDIUM</span>
+              </td>
+              <td style="font-weight:600;color:#1e3a5f">SOCIAL_WITHDRAWAL</td>
+              <td style="color:#334155;font-size:13px">Social engagement dropped 40.3 pts vs baseline (baseline=68.3, today=28) with gaze direction='downward'.</td>
+              <td style="text-align:center">28.0</td>
+              <td style="text-align:center;font-weight:700;color:#ef4444">-40.3</td>
+            </tr>
+            <tr style="background:#fef3c7">
+              <td style="color:#78350f;font-weight:600">2025-01-18</td>
+              <td>
+                <span style="background:#f59e0b;color:#fff;padding:2px 8px;
+                  border-radius:12px;font-size:11px;font-weight:700">HIGH</span>
+              </td>
+              <td style="font-weight:600;color:#78350f">SUDDEN_DROP</td>
+              <td style="color:#334155;font-size:13px">Wellbeing dropped 32.3 pts below personal baseline (baseline=72.3, today=40).</td>
+              <td style="text-align:center">40.0</td>
+              <td style="text-align:center;font-weight:700;color:#ef4444">-32.3</td>
+            </tr>
+            <tr style="background:#fef3c7">
+              <td style="color:#78350f;font-weight:600">2025-01-18</td>
+              <td>
+                <span style="background:#f59e0b;color:#fff;padding:2px 8px;
+                  border-radius:12px;font-size:11px;font-weight:700">HIGH</span>
+              </td>
+              <td style="font-weight:600;color:#78350f">SUSTAINED_LOW</td>
+              <td style="color:#334155;font-size:13px">Wellbeing below 45 for 3 consecutive days (avg=40.0).</td>
+              <td style="text-align:center">40.0</td>
+              <td style="text-align:center;font-weight:700;color:#ef4444">-32.3</td>
+            </tr>
+            <tr style="background:#dbeafe">
+              <td style="color:#1e3a5f;font-weight:600">2025-01-18</td>
+              <td>
+                <span style="background:#3b82f6;color:#fff;padding:2px 8px;
+                  border-radius:12px;font-size:11px;font-weight:700">MEDIUM</span>
+              </td>
+              <td style="font-weight:600;color:#1e3a5f">SOCIAL_WITHDRAWAL</td>
+              <td style="color:#334155;font-size:13px">Social engagement dropped 38.3 pts vs baseline (baseline=68.3, today=30) with gaze direction='downward'.</td>
+              <td style="text-align:center">30.0</td>
+              <td style="text-align:center;font-weight:700;color:#ef4444">-38.3</td>
+            </tr>
+            <tr style="background:#fee2e2">
+              <td style="color:#7f1d1d;font-weight:600">2025-01-20</td>
+              <td>
+                <span style="background:#dc2626;color:#fff;padding:2px 8px;
+                  border-radius:12px;font-size:11px;font-weight:700">CRITICAL</span>
+              </td>
+              <td style="font-weight:600;color:#7f1d1d">ABSENCE_FLAG</td>
+              <td style="color:#334155;font-size:13px">Person not detected for 2 consecutive days — welfare check needed.</td>
+              <td style="text-align:center">0.0</td>
+              <td style="text-align:center;font-weight:700;color:#22c55e">—</td>
+            </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Daily timeline -->
+<div class="section">
+  <h2>Daily Wellbeing Timeline</h2>
+  <div style="overflow-x:auto">
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th><th>Present</th><th>Wellbeing</th>
+          <th>Social</th><th>Energy</th><th>Eye Contact</th><th>Gaze</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+    <tr>
+      <td style="font-weight:600">2025-01-13</td>
+      <td><span style="color:#16a34a;font-weight:700">✓</span></td>
+      <td style="color:#16a34a">72</td>
+      <td style="color:#16a34a">68</td>
+      <td style="color:#16a34a">60</td>
+      <td style="color:#16a34a">71%</td>
+      <td>forward</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600">2025-01-14</td>
+      <td><span style="color:#16a34a;font-weight:700">✓</span></td>
+      <td style="color:#16a34a">75</td>
+      <td style="color:#16a34a">72</td>
+      <td style="color:#16a34a">63</td>
+      <td style="color:#16a34a">68%</td>
+      <td>forward</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600">2025-01-15</td>
+      <td><span style="color:#16a34a;font-weight:700">✓</span></td>
+      <td style="color:#16a34a">70</td>
+      <td style="color:#16a34a">65</td>
+      <td style="color:#f59e0b;font-weight:600">58</td>
+      <td style="color:#f59e0b">65%</td>
+      <td>forward</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600">2025-01-16</td>
+      <td><span style="color:#16a34a;font-weight:700">✓</span></td>
+      <td style="color:#dc2626;font-weight:700">42</td>
+      <td style="color:#dc2626;font-weight:700">38</td>
+      <td style="color:#dc2626;font-weight:700">35</td>
+      <td style="color:#dc2626">10%</td>
+      <td>downward</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600">2025-01-17</td>
+      <td><span style="color:#16a34a;font-weight:700">✓</span></td>
+      <td style="color:#dc2626;font-weight:700">38</td>
+      <td style="color:#dc2626;font-weight:700">28</td>
+      <td style="color:#dc2626;font-weight:700">30</td>
+      <td style="color:#dc2626;font-weight:700">0%</td>
+      <td>downward</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600">2025-01-18</td>
+      <td><span style="color:#16a34a;font-weight:700">✓</span></td>
+      <td style="color:#dc2626;font-weight:700">40</td>
+      <td style="color:#dc2626;font-weight:700">30</td>
+      <td style="color:#dc2626;font-weight:700">28</td>
+      <td style="color:#dc2626;font-weight:700">0%</td>
+      <td>downward</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600">2025-01-19</td>
+      <td><span style="color:#dc2626;font-weight:700">✗ ABSENT</span></td>
+      <td style="color:#94a3b8">—</td>
+      <td style="color:#94a3b8">—</td>
+      <td style="color:#94a3b8">—</td>
+      <td style="color:#94a3b8">—</td>
+
+      <td>—</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600">2025-01-20</td>
+      <td><span style="color:#dc2626;font-weight:700">✗ ABSENT</span></td>
+      <td style="color:#94a3b8">—</td>
+      <td style="color:#94a3b8">—</td>
+      <td style="color:#94a3b8">—</td>
+      <td style="color:#94a3b8">—</td>
+
+      <td>—</td>
+    </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div style="text-align:center;color:#94a3b8;font-size:12px;margin-top:32px">
+  SenitoMinds Anomaly Detection v1.0 — Confidential Counsellor Report — 2026-03-24 10:30 UTC
+</div>
+</body>
+</html>
